@@ -41,20 +41,3 @@ In the first case, at least 2 non-infected people (or infected people) need to w
 In the second case, the mayor can choose any 4 people (infected or not) to wear masks such that spread is prevented.
 
 In the third case, since there are no infections, no masks are needed.
-
-Logic
-To stop the spread, you need to ensure that every interaction between an infected and uninfected person involves at least one person wearing a mask.
-
-Thus, the minimum number of people to mask is:
-
-ini
-Copy
-Edit
-min_masks = min(A, N - A)
-Where:
-
-A is the number of infected people.
-
-N - A is the number of uninfected people.
-
-This ensures that all interactions are "safe".
